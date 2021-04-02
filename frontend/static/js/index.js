@@ -1,4 +1,6 @@
 import Dashboard from "./views/Dashboard.js";
+import Posts from "./views/Posts.js";
+import About from "./views/About.js";
 
 const navigateTo = url => {
     history.pushState(null, null, url);
@@ -8,8 +10,8 @@ const navigateTo = url => {
 const router = async () => {
     const routes = [
         { path: "/", view: Dashboard },
-        // { path: "/posts", view: () => console.log("posts") },
-        // { path: "/about-me", view: () => console.log("about") },
+        { path: "/posts", view: Posts },
+        { path: "/about-me", view: About },
     ];
 
     //test each route for potential match

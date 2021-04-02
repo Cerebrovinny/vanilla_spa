@@ -3,17 +3,17 @@ import Abstract from "./Abstract.js";
 export default class extends Abstract {
     constructor() {
         super();
-        this.setTitle("Dashboard");
+        this.setTitle("About-me");
     }
 
     async getHtml() {
         return `
-            <h1>Welcome to Single page APP</h1>
+            <h1>Vinicius Cardoso</h1>
             <p>
-                Lorem Ipsum
+                Software Engineer
             </p>
             <p>
-                <a href="/posts" data-link>View posts</a>
+                <a href="/" data-link>Home</a>
             </p>
         `;
     }
